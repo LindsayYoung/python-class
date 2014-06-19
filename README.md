@@ -6,6 +6,7 @@ Sunlight's 2014 Summer Python class
 
 First Class!
 06/18/2014
+[See lesson-1/first_class.py for more notes and code](https://github.com/LindsayYoung/python-class/blob/master/lesson-1/first_class.py)
 
 * Intro
 
@@ -23,32 +24,23 @@ First Class!
 (You can only have 2 consoles open at a time so you may have to close a console to see the console options)
 
 
-
 * The python prompt
 ..* “Hello World!”
 * Your first file!
 ..* “Hello World!”
 * The Bash prompt
 
-##Variables and assignment
+###Variables and assignment
 types and changing types - 
-```
-int()
-``` 
-```
-str()
-```
-```
-float()
-```
+* `int()` 
+* `str()`
+* `float()`
 
-##first data structures
+###first data structures
 * list
 * dictionary
 
-[See lesson-1/first_class.py for more notes and code](https://github.com/LindsayYoung/python-class/blob/master/lesson-1/first_class.py)
-
-##Homework-
+###Homework-
 [Homework inspired by Nicko](http://sunlightfoundation.com/blog/2010/12/02/sunlights-political-action-committee-pac-name-generator/)
 
 print a super PAC name using string indices. Here is your list:
