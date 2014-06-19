@@ -32,9 +32,15 @@ First Class!
 
 ##Variables and assignment
 +types and changing types - 
-```int()``` 
-```str()```
-```float()```
+```
+int()
+``` 
+```
+str()
+```
+```
+float()
+```
 
 ##first data structures
 +list
