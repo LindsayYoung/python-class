@@ -7,44 +7,42 @@ Sunlight's 2014 Summer Python class
 First Class!
 06/18/2014
 
--Intro
++Intro
 
--What is Python?
---A Python program (or any program) is a list of instructions for you computer
---Python is an intermediate language that makes these instructions somewhat more readable for humans
---Like any language, Python has syntax and grammatical rules that you need to follow to facilitate understanding between yourself and the computer
---Breaking these rules causes syntax errors that break your program
++What is Python?
+++A Python program (or any program) is a list of instructions for you computer
+++Python is an intermediate language that makes these instructions somewhat more readable for humans
+++Like any language, Python has syntax and grammatical rules that you need to follow to facilitate understanding between yourself and the computer
+++Breaking these rules causes syntax errors that break your program
 
--[PythonAnywhere](https://www.pythonanywhere.com)
++[PythonAnywhere](https://www.pythonanywhere.com)
 1. run a line of code directly in the IPython console (we are using 2.7)
-
 2. make a file and click save and run
-
 3. make a file and  and open the Bash console and type: python the_name_of_your_file.py
 
 (You can only have 2 consoles open at a time so you may have to close a console to see the console options)
 
 
 
--The python prompt
---“Hello World!”
--Your first file!
---“Hello World!”
--The Bash prompt
++The python prompt
+“Hello World!”
++Your first file!
+“Hello World!”
++The Bash prompt
 
--Variables and assignment
--types and changing types - 
---int() 
---str()
---float()
+##Variables and assignment
++types and changing types - 
+```int()``` 
+```str()```
+```float()```
 
--first data structures
---list
---dictionary
+##first data structures
++list
++dictionary
 
-See lesson-1/first_class.py for more notes and code
+###See lesson-1/first_class.py for more notes and code
 
-Homework-
+##Homework-
 [Homework inspired by Nicko](http://sunlightfoundation.com/blog/2010/12/02/sunlights-political-action-committee-pac-name-generator/)
 
 print a super PAC name using string indices. Here is your list:
