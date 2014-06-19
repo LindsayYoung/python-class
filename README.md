@@ -11,10 +11,10 @@ First Class!
 * Intro
 
 * What is Python?
-..* A Python program (or any program) is a list of instructions for you computer
-..* Python is an intermediate language that makes these instructions somewhat more readable for humans
-..* Like any language, Python has syntax and grammatical rules that you need to follow to facilitate understanding between yourself and the computer
-..* Breaking these rules causes syntax errors that break your program
+..- A Python program (or any program) is a list of instructions for you computer
+..- Python is an intermediate language that makes these instructions somewhat more readable for humans
+..- Like any language, Python has syntax and grammatical rules that you need to follow to facilitate understanding between yourself and the computer
+..- Breaking these rules causes syntax errors that break your program
 
 * [PythonAnywhere](https://www.pythonanywhere.com)
 1. run a line of code directly in the IPython console (we are using 2.7)
@@ -25,9 +25,9 @@ First Class!
 
 
 * The python prompt
-..* “Hello World!”
+.. “Hello World!”
 * Your first file!
-..* “Hello World!”
+.. “Hello World!”
 * The Bash prompt
 
 ###Variables and assignment
