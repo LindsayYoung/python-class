@@ -1,10 +1,10 @@
-python-class
+Python Class
 ============
 
 Sunlight's 2014 Summer Python class
 
 
-First Class!
+# First Class!
 06/18/2014
 [See lesson-1/first_class.py for more notes and code](https://github.com/LindsayYoung/python-class/blob/master/lesson-1/first_class.py)
 
@@ -50,6 +50,147 @@ pac_list = [ "Action", "Against",  "Americans", "Awesome", "Citizens", "Committe
 ```
 
 Extra credit: find the random integer function to create a new name each time you run the program. (Hint: google “python random integer”)
+
+
+# Second Class!
+06/18/2014
+
+add link to file here!!!!!!!!!!!
+
+###Data types
+* string - letters or numbers as text
+* int - integer number
+* float - decimal number
+* use type()
+* change type with string(), int(), float()
+new data type:
+* boolean - that is just a fancy way to say things that are `True` or `False`
+
+
+###Data Structures
+
+###lists
+* ordered
+* use brackets []
+* add to the list with .append()
+* remove to a list with .remove()
+* order a list sorted()
+* splice a list
+example:
+```
+>>> my_list = [4,3,2,6,1,5]
+>>> my_list[0]
+4
+>>> my_list[-1]
+5
+>>> my_list[2:4]
+[2, 6]
+>>> sorted(my_list)
+[1, 2, 3, 4, 5, 6]
+>>> sorted(my_list, reverse=True)
+[6, 5, 4, 3, 2, 1]
+>>> my_list.append(7)
+>>> print(my_list)
+[4, 3, 2, 6, 1, 5, 7]
+>>> my_list.remove(7)
+>>> print(my_list)
+[4, 3, 2, 6, 1, 5]
+```
+
+###dictionaries
+* key value pairs
+* use curly braces {} ( we decided curly braces look like open dictionary books)
+* lookup by key
+* the key must be unique
+* delete form a dictionary with del
+example:
+```
+>>> my_dictionary = {'DE':'Delaware', 'PA':'Pennsylvania'}
+>>> # there is no order in dictionaries, so no sorting
+>>> my_dictionary['DE']
+'Delaware'
+>>> my_dictionary['NJ'] = 'New Jersey'
+>>> print(my_dictionary)
+{'NJ': 'New Jersey', 'DE': 'Delaware', 'PA': 'Pennsylvania'}
+>>> del my_dictionary['NJ']
+>>> print(my_dictionary)
+{'DE': 'Delaware', 'PA': 'Pennsylvania'}
+```
+###flow control
+
+###conditional statements
+We can check if something is true or false and make our program respond differently 
+
+Here are some helpful operators to make comparisons
+* `==` equal
+* `!=` not equal
+* `>` greater than
+* `>=` greater than or equal to
+* `<` less than
+* `<=` less than or equal to
+* `not` means, not
+
+'if'
+* 'if' is a reserved word in Python that will trigger code to do something only if that condition is met.
+* make sure to put a colon after your if statement
+* if statements depend on consistent indentation to know what you want
+* to check for equality, use == (we use = for assigning a variable)
+example:
+```
+>>> python_class = 'fun'
+>>> if python_class == 'lame':
+...     print("This class is lame")
+... 
+>>> if python_class == 'fun':
+...	    print("This class is as fun!")
+This class is fun!
+``` 
+
+'else'
+* use else when you have a case not covered by if that you want to behave differently
+* remember indention and a colon!
+
+```
+>>> python_class = 'fun'
+>>> if python_class != 'fun':
+...     print("Python class is not fun")
+... else:
+...     print("I love making computers do my bidding!")
+... 
+I love making computers do my bidding!
+```
+
+'elif'
+The world is full of boundless opportunists and we might want to check for many things.
+```
+if my_bank_account > 1000000000:
+	print('retire now')
+elif my_bank_account > 1:
+	print('look for new job')
+else:
+	print("keep on truckin'!")
+
+```
+ 
+###Take user input
+`raw_input()`
+We generally make programs and want them to respond to people and the real world. `raw_input()` will take a value from the user that you can use in your program. 
+* add directions as a string in the parenthesis so you user knows what to do
+```
+>>> name = raw_input()
+hello
+>>> print name
+hello
+>>> name = raw_input("what is your name?")
+what is your name?Lindsay
+>>> response = "Hello, " + name
+>>> print response
+Hello, Lindsay
+```
+Ready to make a real program?
+Let's look at:
+[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/state_dict.py)
+
 
 
 
