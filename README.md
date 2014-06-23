@@ -160,7 +160,7 @@ I love making computers do my bidding!
 
 'elif'
 
-The world is full of boundless opportunists and we might want to check for many things.
+The world is full of boundless opportunities and we might want to check for many things.
 ```
 if my_bank_account > 1000000000:
 	print('retire now')
