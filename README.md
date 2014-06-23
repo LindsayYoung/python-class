@@ -175,10 +175,6 @@ else:
 We generally make programs and want them to respond to people and the real world. `raw_input()` will take a value from the user that you can use in your program. 
 * add directions as a string in the parenthesis so you user knows what to do
 ```
->>> name = raw_input()
-hello
->>> print name
-hello
 >>> name = raw_input("what is your name?")
 what is your name?Lindsay
 >>> response = "Hello, " + name
