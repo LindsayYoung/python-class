@@ -159,6 +159,7 @@ I love making computers do my bidding!
 ```
 
 'elif'
+
 The world is full of boundless opportunists and we might want to check for many things.
 ```
 if my_bank_account > 1000000000:
@@ -167,7 +168,6 @@ elif my_bank_account > 1:
 	print('look for new job')
 else:
 	print("keep on truckin'!")
-
 ```
  
 ###Take user input
@@ -186,6 +186,7 @@ what is your name?Lindsay
 Hello, Lindsay
 ```
 Ready to make a real program?
+
 Let's look at: 
 ###[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/state_dict.py)
 
