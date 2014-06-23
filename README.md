@@ -184,7 +184,7 @@ Hello, Lindsay
 Ready to make a real program?
 
 Let's look at: 
-###[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/state_dict.py)
+###[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/states.py)
 
 
 
