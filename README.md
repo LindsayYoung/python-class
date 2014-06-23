@@ -55,14 +55,12 @@ Extra credit: find the random integer function to create a new name each time yo
 # Second Class!
 06/18/2014
 
-add link to file here!!!!!!!!!!!
-
 ###Data types
 * string - letters or numbers as text
 * int - integer number
 * float - decimal number
-* use type()
-* change type with string(), int(), float()
+* use `type()` to discover the type of something
+* change type with `string()`, `int()`, `float()`
 new data type:
 * boolean - that is just a fancy way to say things that are `True` or `False`
 
@@ -70,11 +68,11 @@ new data type:
 ###Data Structures
 
 ###lists
-* ordered
-* use brackets []
-* add to the list with .append()
-* remove to a list with .remove()
-* order a list sorted()
+* lists are ordered
+* use brackets [ ]
+* add to the list with `.append()`
+* remove to a list with `.remove()`
+* order a list `sorted()`
 * splice a list
 example:
 ```
@@ -99,7 +97,7 @@ example:
 
 ###dictionaries
 * key value pairs
-* use curly braces {} ( we decided curly braces look like open dictionary books)
+* use curly braces { } (we decided curly braces look like open dictionary books)
 * lookup by key
 * the key must be unique
 * delete form a dictionary with del
@@ -131,7 +129,7 @@ Here are some helpful operators to make comparisons
 * `not` means, not
 
 'if'
-* 'if' is a reserved word in Python that will trigger code to do something only if that condition is met.
+* `if` is a reserved word in Python that will trigger code to do something only if that condition is met.
 * make sure to put a colon after your if statement
 * if statements depend on consistent indentation to know what you want
 * to check for equality, use == (we use = for assigning a variable)
@@ -188,8 +186,8 @@ what is your name?Lindsay
 Hello, Lindsay
 ```
 Ready to make a real program?
-Let's look at:
-[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/state_dict.py)
+Let's look at: 
+###[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/state_dict.py)
 
 
 
