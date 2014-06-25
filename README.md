@@ -3,6 +3,10 @@ Python Class
 
 Sunlight's 2014 Summer Python class
 
+#Syllabus
+* [First class](#first-class): variables, types, list, dictionary
+* [Second class](#second-class):  data types, data structures, conditional, user input
+
 
 # First Class!
 06/18/2014
@@ -22,7 +26,6 @@ Sunlight's 2014 Summer Python class
 3. make a file and  and open the Bash console and type: python the_name_of_your_file.py
 
 (You can only have 2 consoles open at a time so you may have to close a console to see the console options)
-
 
 * The python prompt
 * “Hello World!”
@@ -186,8 +189,37 @@ Ready to make a real program?
 Let's look at: 
 ###[lesson 2 code](https://github.com/LindsayYoung/python-class/blob/master/lesson-2/states.py)
 
+We also covered terminal and file systems because PythonAnywhere was down:
+###Command line
+
+(Most of us Mac users used a Bash Terminal)
+
+1) We opened terminal and typed `pwd`, then enter. (`pwd` stands for "print working directory") This printed out where we were in the file system. When we opened our terminal, we were in our home directory. People's home directory can be named anything in this example, my home directory is "home_directory."
+
+2) We saved our python code in a file. We saved our file with the name 'states.py' and put it in our home directory in a file named code. The '.py' at the end of the file name tells the computer that the file is a python program.
+ ```
+home_directory
+	|
+	|-code
+		|-states.py
+ ```
+3) We went back to the terminal and typed `ls`, then enter. (`ls` stands for list) this listed everything in our directory. We could see the code folder if it was properly saved in the home directory. 
+
+Then, there were two ways of running the program:
+
+1) We could run the program by typing `python code/states.py', then enter. 'python' tells the terminal to run your program with python. Then we gave it the location of the file with the folder name a slash and the filename.
+
+2) We can also move to the folder by typing 'cd code', then enter. (`cd` stands for "change directory") If we type 'ls' enter again, we can see our file `states.py`. Now that we are in the directory of our file, we can run the program `python states.py', then enter.
+
+Commandline is not bad once you get the hang of it but it takes some practice. 
+
+This is a great resource from the Boston Python Workshop about to use a terminal to run python:
+* [for Mac computers](https://openhatch.org/wiki/Boston_Python_Workshop_8/Friday/OSX_Python_scripts)
+* [for Windows computers](https://openhatch.org/wiki/Boston_Python_Workshop_8/Friday/Windows_terminal_navigation)
+* [for Linux computers](https://openhatch.org/wiki/Boston_Python_Workshop_8/Friday/Linux_Python_scripts)
 
 
+Here's another resource, [Command Line Crash Corse](http://cli.learncodethehardway.org/book/), that explains command line basics.
 
 
 
