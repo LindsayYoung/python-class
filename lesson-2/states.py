@@ -8,26 +8,37 @@ state_list = ['Delaware', 'Pennsylvania', 'New Jersey', 'Georgia', 'Connecticut'
 
 # Ask the user for input and provide a prompt that explains we need a state abbreviation 
 # Make sure the user input is assigned to a variable
+state = raw_input("Give me a state abbreviation ")
 
 # Check if the abbreviation is in the state_dictionary
 # If it is not in the state dictionary, give an error message of your choosing and exit()
+if not state_dict.has_key(state):
+	print("Error not in dictionary")
+	exit()
+
+print("good job that is a state")
 
 # Look up the abbreviation in the state_dictionary to get the full name
 # Make sure full name is assigned to a variable
+state_name = state_dict[state]
 
 # Find the index of the item in the list
 # Because index will start counting at zero, we want to add 1 to the index to get its order of admission
+order = state_list.index(state_name)
+order = order + 1
 
 # Format the order as a string
+order = str(order)
 
+# extra credit: (hint treat the string like a list)
 # if it ends in a "2" add "nd" at the end of the string
 # else if it ends in a "1" add "st" at the end of the string
 # else if it ends in a "3" add "rd" at the end of the string
 # else, add a "th" to the end of the string
 
 # Print the full name of the state and order that it was accepted into the union
-
-
+print_statement = "Your state is " + state_name + " the order is " + order
+print(print_statement)
 
 
 # Please note that this example is not the most efficient way of attacking this problem, but it will help you practice skills you need later
