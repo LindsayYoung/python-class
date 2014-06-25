@@ -164,7 +164,7 @@ The world is full of boundless opportunities and we might want to check for many
 ```
 if my_bank_account > 1000000000:
 	print('retire now')
-elif my_bank_account > 1:
+elif my_bank_account < 1:
 	print('look for new job')
 else:
 	print("keep on truckin'!")
