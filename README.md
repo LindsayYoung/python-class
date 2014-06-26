@@ -236,6 +236,9 @@ Book:
 [Hello World](http://www.barnesandnoble.com/listing/2691811512844?r=1&cm_mmc=GooglePLA-_-Book_25To44-_-Q000000633-_-2691811512844)
 
 Other Resources:
+
 [https://wiki.python.org/moin/BeginnersGuide/Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers) 
+
+[anthonydb/python-get-started](https://github.com/anthonydb/python-get-started): a repository with good examples to use as reference
 
 
