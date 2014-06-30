@@ -6,7 +6,7 @@ Sunlight's 2014 Summer Python class
 #Syllabus
 * [First class](#first-class): variables, types, list, dictionary
 * [Second class](#second-class):  data types, data structures, conditional, user input, command line
-# [Third class](#third-class): command line, loops, range
+* [Third class](#third-class): command line, loops, range
 
 ***
 # First Class!
@@ -307,7 +307,7 @@ We added one to our variable, 'var', and and continued to do so until var was no
 Lets try making a game based on a while loop. 
 * Open a file in your text editor. Let's name it 'gessing_game.py'
 * Save that file in your code folder, so we can find it easily later
-* We will make something based on guess_a_number_loop.py 
+* We will make something based on [guess_a_number_loop.py](https://github.com/LindsayYoung/python-class/blob/master/lesson-3/guess_a_number_loop.py)
 
 
 ***
