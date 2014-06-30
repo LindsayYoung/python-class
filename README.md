@@ -5,7 +5,8 @@ Sunlight's 2014 Summer Python class
 
 #Syllabus
 * [First class](#first-class): variables, types, list, dictionary
-* [Second class](#second-class):  data types, data structures, conditional, user input
+* [Second class](#second-class):  data types, data structures, conditional, user input, command line
+# [Third class](#third-class): command line, loops, range
 
 ***
 # First Class!
@@ -172,6 +173,7 @@ elif my_bank_account < 1:
 else:
 	print("keep on truckin'!")
 ```
+Here is another example dedicated to Caitlin 
  
 ###Take user input
 `raw_input()`
@@ -220,6 +222,92 @@ This is a great resource from the Boston Python Workshop about to use a terminal
 
 Here's another resource, [Command Line Crash Corse](http://cli.learncodethehardway.org/book/), that explains command line basics.
 
+***
+# Third Class!
+
+###Command line review
+
+The comand line is a way of operating system without GUI. GUI stands for grapical user interface and it is the point and click way that you are used to using a computer.
+
+When you are in the command line you are always in a place in your file system. To find out where you are you can use, `pwd` to print the current working directory. To see the folders and files directly below where you are you can use `ls` to list the files and folders of your current directory. Use `cd` to change your directory.
+
+To run a python program from command line, change to the directory of the file and type `python name_of_your_file.py`
+
+### Loops
+
+Loops perform a set tasks that you give them over and over. It is extremely useful to write programs to do boring repetitive tasks for you. 
+
+### For loops
+
+"for" is a key word in Python that is used in loops. After 'for' you pass in a variable that you can use on each iteration of the loop. Then, you pass in the object you want to loop through. Like if statements, don't forget the colon and indentation.
+
+Here is an example:
+```
+>>>shopping_list = ["apple", "orange", "bread", "milk"]
+>>>for item in shoping_list:
+...  print item
+apple
+orange
+bread
+milk
+```
+That function went through each item in the list and printed it. 
+
+Say you wanted to do some thing a set amount of times. You can use the `range()` function. Range takes an integer and creates a list that is as long as the integer you give it.
+
+Example:
+``` 
+>>> print range(5)
+[0, 1, 2, 3, 4]
+
+```
+
+The following program will print "hello" three times using range.
+```
+>>>for n in range(3):
+...  print("hello")
+hello
+hello
+hello
+```
+In the previous example we pass in 'n' because we are using it for counting. The variable you pass in can be anything you want. The first time through the loop, n is representing 0, the next time it is representing 1. finally, n represents, 2 the last item in the list provided by the range function. 
+
+Dictionaries can be looped through as well. We will loop through each key in the dictionary using the `.keys()` function.
+```
+>>> person = {'first_name':'Jane', 'last_name':'Doe'}
+>>> for name in person.keys():
+...     print name
+...     print person[name]
+... 
+first_name
+Jane
+last_name
+Doe
+```
+In that example, each loop name is the variable for the dictionary key that is being passed in. For each iteration of the loop when the program gets to `print name` the key is printed then, the next line `print person[name]` also executes because it is at the same indentation. In that line, we look up the value using the key in the dictionary and print the value.
+
+### While loops
+
+'while' is another way to control loops. Instead of doing something a set number of times, the program will keep looping until a condition is met. If the condition is never met, you have made an infinate loop and will need to use 'CTRL-C' to stop the loop.
+
+Don't forget indention and your colon.
+
+```
+>>> var = 5
+>>> while var < 8:
+...     print var
+...     var = var + 1
+... 
+5
+6
+7
+```
+We added one to our variable, 'var', and and continued to do so until var was no longer less than 8. 
+
+Lets try making a game based on a while loop. 
+* Open a file in your text editor. Let's name it 'gessing_game.py'
+* Save that file in your code folder, so we can find it easily later
+* We will make something based on guess_a_number_loop.py 
 
 
 ***
