@@ -7,6 +7,13 @@ Sunlight's 2014 Summer Python class
 * [First class](#first-class): variables, types, list, dictionary
 * [Second class](#second-class):  data types, data structures, conditional, user input, command line
 * [Third class](#third-class): command line, loops, range
+* Fourth class: functions
+* Fifth class: CSV reading and writing
+* Sixth class: APIs
+* Start projects!
+
+[Additional resources](#additional-resources)
+
 
 ***
 # First Class!
@@ -288,7 +295,7 @@ In that example, each loop name is the variable for the dictionary key that is b
 
 ### While loops
 
-'while' is another way to control loops. Instead of doing something a set number of times, the program will keep looping until a condition is met. If the condition is never met, you have made an infinate loop and will need to use 'CTRL-C' to stop the loop.
+'while' is another way to control loops. Instead of doing something a set number of times, the program will keep looping until a condition is met. If the condition is never met, you have made an infinite loop and will need to use 'CTRL-C' to stop the loop.
 
 Don't forget indention and your colon.
 
@@ -316,7 +323,7 @@ Lets try making a game based on a while loop.
 The official Python documentation: 
 [http://docs.python.org/](http://docs.python.org/)
 
-Additional practice :
+Additional practice:
 [http://www.codecademy.com/](http://www.codecademy.com/)
 [http://learnpythonthehardway.org/book/](http://learnpythonthehardway.org/book/)
 
@@ -325,8 +332,10 @@ Book:
 
 Other Resources:
 
-[https://wiki.python.org/moin/BeginnersGuide/Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers) 
+Beginning guide [https://wiki.python.org/moin/BeginnersGuide/Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers) 
 
-[anthonydb/python-get-started](https://github.com/anthonydb/python-get-started): a repository with good examples to use as reference
+A repository with good examples to use as reference[anthonydb/python-get-started](https://github.com/anthonydb/python-get-started)
+
+A list of reserved words[python.org](https://docs.python.org/release/2.5.4/ref/keywords.html)
 
 
