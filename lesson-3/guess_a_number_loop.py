@@ -8,7 +8,7 @@ secret = random.randint(1,99)
 guess = 0
 tries = 0
 
-print("""I am a migical lepricon, to win my pot of gold, guess my number between 1 and 99. You only get 6 guesses.""")
+print("""I am a magical leprechaun, to win my pot of gold, guess my number between 1 and 99. You only get 6 guesses.""")
 
 while guess != secret and tries <6:
     guess = raw_input("do you know the number?")
