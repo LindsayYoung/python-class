@@ -231,7 +231,7 @@ Here's another resource, [Command Line Crash Corse](http://cli.learncodethehardw
 
 ***
 # Third Class!
-
+07/02/2014
 ###Command line review
 
 The comand line is a way of operating system without GUI. GUI stands for grapical user interface and it is the point and click way that you are used to using a computer.
@@ -316,23 +316,20 @@ Lets try making a game based on a while loop.
 * Save that file in your code folder, so we can find it easily later
 * We will make something based on [guess_a_number_loop.py](https://github.com/LindsayYoung/python-class/blob/master/lesson-3/guess_a_number_loop.py)
 
-see the code we made during class [here](https://github.com/LindsayYoung/python-class/blob/master/lesson-3/number_game.py)
+See the code we made during class [here].(https://github.com/LindsayYoung/python-class/blob/master/lesson-3/number_game.py) We also saw that using print statements can help in debugging when there is a logical error or a typo. 
 
 
 ***
 #Additional resources
 
 The official Python documentation: 
-
 * [http://docs.python.org/](http://docs.python.org/)
 
 Additional practice:
-
 * [http://www.codecademy.com/](http://www.codecademy.com/)
 * [http://learnpythonthehardway.org/book/](http://learnpythonthehardway.org/book/)
 
 Book:
-
 * [Hello World](http://www.barnesandnoble.com/listing/2691811512844?r=1&cm_mmc=GooglePLA-_-Book_25To44-_-Q000000633-_-2691811512844)
 
 Other Resources:
