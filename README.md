@@ -316,18 +316,23 @@ Lets try making a game based on a while loop.
 * Save that file in your code folder, so we can find it easily later
 * We will make something based on [guess_a_number_loop.py](https://github.com/LindsayYoung/python-class/blob/master/lesson-3/guess_a_number_loop.py)
 
+see the code we made during class [here](https://github.com/LindsayYoung/python-class/blob/master/lesson-3/number_game.py)
+
 
 ***
 #Additional resources
 
 The official Python documentation: 
+
 [http://docs.python.org/](http://docs.python.org/)
 
 Additional practice:
+
 [http://www.codecademy.com/](http://www.codecademy.com/)
 [http://learnpythonthehardway.org/book/](http://learnpythonthehardway.org/book/)
 
 Book:
+
 [Hello World](http://www.barnesandnoble.com/listing/2691811512844?r=1&cm_mmc=GooglePLA-_-Book_25To44-_-Q000000633-_-2691811512844)
 
 Other Resources:
@@ -336,6 +341,6 @@ Beginning guide [https://wiki.python.org/moin/BeginnersGuide/Programmers](https:
 
 A repository with good examples to use as reference[anthonydb/python-get-started](https://github.com/anthonydb/python-get-started)
 
-A list of reserved words[python.org](https://docs.python.org/release/2.5.4/ref/keywords.html)
+A list of reserved words [python.org](https://docs.python.org/release/2.5.4/ref/keywords.html)
 
 
