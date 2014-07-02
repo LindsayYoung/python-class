@@ -344,7 +344,7 @@ examplehello
 ```
 Now, it is time to build your own function. You probably noticed all of those functions use paresis. We will need paresis to call our function. "Calling a function" just means running the code in that function.
 
-In writing our function we need to use `def` to define it, name our function, have paresis, use a colon and put the code inside
+In writing our function we need to use `def` to define it, name our function, have paresis, use a colon and put the code inside. As always, indentation is important!
 ```
 def our_function():
 	print "hello"
@@ -356,13 +356,37 @@ We call the function like this:
 ```
 our_function()
 ``` 
+We can use functions to save us time on repetitive tasks:
+```
+# first, I will write my function
+def never_ending_song():
+	print("This is the song that never ends")
+	print("It just goes on and on my friend")
+	print("Some people started singing it not knowing what it was,")
+	print("And they'll continue singing it forever just because . . .")
 
+# now I will call my function
+never_ending_song()
+
+# adding \n to create a line break
+answer = raw_input("Did you like that? \n")
+
+while answer == "yes":
+	never_ending_song()
+	answer = raw_input("Want some more? \n")
+
+print("\nOne more time for good measure \n")
+never_ending_song()
+```
+You can see we ran that same code in three different places in our script and only had to write it once!
+
+But perhaps, we need to to a similar thing but not the exact same thing. Functions can help us with that too. 
 
 
 Other concepts we should cover:
 * use `in` for a list
 * how the script will run in sequence 
-* passing a variable into a function
+* passing a variable into a function, define arguments and parameters
 * variable scope
 
 
