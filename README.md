@@ -318,6 +318,54 @@ Lets try making a game based on a while loop.
 
 See the code we made during class [here].(https://github.com/LindsayYoung/python-class/blob/master/lesson-3/number_game.py) We also saw that using print statements can help in debugging when there is a logical error or a typo. 
 
+***
+# Fourth Class!
+07/09/2014
+###Functions
+Functions are contained, reusable bits of code.
+
+We have been using built-in functions. Here are some useful ones:
+```
+>>> print("hello")
+hello
+>>> # len stans for length and gives you the length of an object like a string or list
+... len("hello")
+5
+>>> range(5)
+[0, 1, 2, 3, 4]
+>>> raw_input("example")
+examplehello
+'hello'
+>>> str(1)
+'1'
+>>> int('1')
+1
+
+```
+Now, it is time to build your own function. You probably noticed all of those functions use paresis. We will need paresis to call our function. "Calling a function" just means running the code in that function.
+
+In writing our function we need to use `def` to define it, name our function, have paresis, use a colon and put the code inside
+```
+def our_function():
+	print "hello"
+
+```
+We just wrote our first function! But how do we run it? 
+
+We call the function like this:
+```
+our_function()
+``` 
+
+
+
+Other concepts we should cover:
+* use `in` for a list
+* how the script will run in sequence 
+* passing a variable into a function
+* variable scope
+
+
 
 ***
 #Additional resources
