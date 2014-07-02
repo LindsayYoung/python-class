@@ -2,7 +2,7 @@ temp = int(raw_input("What is the tempature? "))
 humidity =  raw_input("is humidity high or low ")
 
 # I want a special message for extreme conditions
-if (temp > 100) and (humidity == "high"):
+if (temp >= 100) and (humidity == "high"):
 	print "Heat advisory due to humidity and high tempature. Use extra caution"
 # Want to print this if it is humid. I don't want to print the first if and this statement because that would be repetitive. 
 elif (temp > 80) and (humidity == "high"):
