@@ -324,7 +324,7 @@ See the code we made during class [here].(https://github.com/LindsayYoung/python
 ###Functions
 Functions are contained, reusable bits of code.
 
-We have been using built-in functions. Here are some useful ones:
+We have been using built-in functions. We give them inputs and they run a program (that we don't see) and return an output. Here are some useful functions:
 ```
 >>> print("hello")
 hello
@@ -380,14 +380,17 @@ never_ending_song()
 ```
 You can see we ran that same code in three different places in our script and only had to write it once!
 
-But perhaps, we need to to a similar thing but not the exact same thing. Functions can help us with that too. 
+But perhaps, we need to to a similar thing but not the exact same thing. Functions can help us with that too. Like those built in functions we saw before, we can pass variables into our function. People call things that are being passed into a function, arguments.
+
+
 
 
 Other concepts we should cover:
 * use `in` for a list
 * how the script will run in sequence 
-* passing a variable into a function, define arguments and parameters
+* passing a variable into a function
 * variable scope
+* return
 
 
 
