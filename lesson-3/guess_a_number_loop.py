@@ -8,7 +8,7 @@ secret = random.randint(1,99)
 guess = 0
 tries = 0
 
-print("""I am a magical leprechaun, to win my pot of gold, guess my number between 1 and 99. You only get 6 guesses.""")
+print("I am a magical leprechaun, to win my pot of gold, guess my number between 1 and 99. You only get 6 guesses.")
 
 while guess != secret and tries <6:
     guess = raw_input("do you know the number?")
@@ -21,5 +21,4 @@ while guess != secret and tries <6:
 if guess == secret:
     print("First they were after my lucky charms, now you get my gold too!")
 else:
-    print("I am keeping my pot of gold- it is magically deleicous")
-    
+    print("I am keeping my pot of gold- it is magically delicious")
