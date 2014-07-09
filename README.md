@@ -7,7 +7,7 @@ Sunlight's 2014 Summer Python class
 * [First class](#first-class): variables, types, list, dictionary
 * [Second class](#second-class):  data types, data structures, conditional, user input, command line
 * [Third class](#third-class): command line, loops, range
-* Fourth class: functions
+* [Fourth class](#fourth-class): functions
 * Fifth class: CSV reading and writing
 * Sixth class: APIs
 * Start projects!
