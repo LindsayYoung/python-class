@@ -399,8 +399,37 @@ Notice the first thing we did was define our function. Then, we called the funct
 You might also ask why we did not just define the variables first rather than passsing them in explicitly. The reason we need to pass in variables in to functions is that a function acts as a clean slate for your script. The variables you create normally outside your function don't exist inside your function. This concept about how far variables reach is called 'scope.' 
 
 
-Other concepts we should cover:
-* use `in` for a list
+You can also pass in more than one arguement:
+```
+def divide(numerator, denominator):
+	answer = numerator/denominator
+	return answer
+
+numerator = float(1)
+denominator = float(2)
+
+fraction = divide(numerator, denominator)
+
+print fraction
+
+```
+One more thing to note before we go on to our next activity. 
+
+Find out if some thing is in a list, use `in`
+```
+designers = ['Olivia', 'Caitlin', 'Amy', 'Lola']
+
+employee = raw_input("type a name and see if they are a Sunlight designer")
+
+if employee in designers:
+	print "designer"
+else:
+	print "not a Sunlight designer"
+
+```
+(Pro tip, you can also use `in` to see if a character is in a string.)
+
+Now we can make another game "snowman" you guess the letters in a word or your snowman melts!
 
 
 ***
