@@ -380,18 +380,27 @@ never_ending_song()
 ```
 You can see we ran that same code in three different places in our script and only had to write it once!
 
+You may have noticed that the program is now not running in sequential order by line. When you call a function, it inturrups the sequential order of code and will go back to the function code and then return to where it was before and continue down the script. Remember to call the function after you define it.
+
 But perhaps, we need to to a similar thing but not the exact same thing. Functions can help us with that too. Like those built in functions we saw before, we can pass variables into our function. People call things that are being passed into a function, arguments.
 
+```
+def doubler(input):
+	output = input * 2
+	return output
 
+ answer = doubler(4)
+
+ print("answer")
+
+```
+Notice the first thing we did was define our function. Then, we called the function and passed in the arguement 4. This takes out program back to our function, doubler, and tells our code input = 4. The prgram then multiplies 4 by 2 and assigns it to a variable, "output." Finally, our function returns our output value, 8. Since the prgram knows doubler returns 8, it assigns "answer" the value 8. Finally, the program prints 8 and is finished running.
+
+You might also ask why we did not just define the variables first rather than passsing them in explicitly. The reason we need to pass in variables in to functions is that a function acts as a clean slate for your script. The variables you create normally outside your function don't exist inside your function. This concept about how far variables reach is called 'scope.' 
 
 
 Other concepts we should cover:
 * use `in` for a list
-* how the script will run in sequence 
-* passing a variable into a function
-* variable scope
-* return
-
 
 
 ***
