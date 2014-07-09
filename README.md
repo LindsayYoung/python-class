@@ -429,7 +429,7 @@ else:
 ```
 (Pro tip, you can also use `in` to see if a character is in a string.)
 
-Now we can make another game "snowman" you guess the letters in a word or your snowman melts!
+Now we can make another game "snowman" where you guess the letters in a word, or your snowman melts!
 
 
 ***
