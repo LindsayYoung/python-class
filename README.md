@@ -422,7 +422,7 @@ designers = ['Olivia', 'Caitlin', 'Amy', 'Lola']
 employee = raw_input("type a name and see if they are a Sunlight designer")
 
 if employee in designers:
-	print "designer"
+	print "You named a designer"
 else:
 	print "not a Sunlight designer"
 
@@ -430,6 +430,8 @@ else:
 (Pro tip, you can also use `in` to see if a character is in a string.)
 
 Now we can make another game "snowman" where you guess the letters in a word, or your snowman melts!
+
+Lets get started, [here](https://github.com/LindsayYoung/python-class/blob/master/lesson-4/snowman.py)
 
 
 ***
