@@ -328,7 +328,7 @@ We have been using built-in functions. We give them inputs and they run a progra
 ```
 >>> print("hello")
 hello
->>> # len stans for length and gives you the length of an object like a string or list
+>>> # len stands for length and gives you the length of an object like a string or list
 ... len("hello")
 5
 >>> range(5)
@@ -380,7 +380,7 @@ never_ending_song()
 ```
 You can see we ran that same code in three different places in our script and only had to write it once!
 
-You may have noticed that the program is now not running in sequential order by line. When you call a function, it inturrups the sequential order of code and will go back to the function code and then return to where it was before and continue down the script. Remember to call the function after you define it.
+You may have noticed that the program is now not running in sequential order by line. When you call a function, it interrupts the sequential order of code and will go back to the function code and then return to where it was before and continue down the script. Remember to call the function after you define it.
 
 But perhaps, we need to to a similar thing but not the exact same thing. Functions can help us with that too. Like those built in functions we saw before, we can pass variables into our function. People call things that are being passed into a function, arguments.
 
@@ -394,13 +394,13 @@ def doubler(input):
  print("answer")
 
 ```
-Notice the first thing we did was define our function. Then, we called the function and passed in the arguement 4. This takes out program back to our function, doubler, and tells our code input = 4. The prgram then multiplies 4 by 2 and assigns it to a variable, "output." Finally, our function returns our output value, 8. Since the prgram knows doubler returns 8, it assigns "answer" the value 8. Finally, the program prints 8 and is finished running.
+Notice the first thing we did was define our function. Then, we called the function and passed in the argument 4. This takes out program back to our function, doubler, and tells our code input = 4. The program then multiplies 4 by 2 and assigns it to a variable, "output." Finally, our function returns our output value, 8. Since the program knows doubler returns 8, it assigns "answer" the value 8. Finally, the program prints 8 and is finished running.
 
-You might also ask why we did not just define the variables first rather than passsing them in explicitly. The reason we need to pass in variables in to functions is that a function acts as a clean slate for your script. The variables you create normally outside your function don't exist inside your function. This concept about how far variables reach is called 'scope.' 
+You might also ask why we did not just define the variables first rather than passing them in explicitly. The reason we need to pass in variables in to functions is that a function acts as a clean slate for your script. The variables you create normally outside your function don't exist inside your function. This concept about how far variables reach is called 'scope.' 
 
 
 
-You can also pass in more than one arguement:
+You can also pass in more than one argument:
 ```
 def divide(numerator, denominator):
 	answer = numerator/denominator
@@ -436,6 +436,147 @@ Now we can make another game "snowman" where you guess the letters in a word, or
 
 Lets get started, [here](https://github.com/LindsayYoung/python-class/blob/master/lesson-4/snowman.py)
 
+***
+# Fifth Class! 
+07/16/2014
+###Files
+We have been using one file to write our programs. Now, we will be able to use many files for our programs.
+
+Here is a simple way to read a file. Let's start with a text file named sample.txt that says, "Hello! This is a sample document that we will read."
+
+```
+# This script assumes the file is in the same folder
+file = 'sample.txt'
+
+# this opens the file, it takes the file name as an argument
+txt = open(file)
+
+# this reads your file
+print txt.read()
+
+# it is a good idea to explicitly close your file
+txt.close()
+
+```
+There we go, we just read our first file! 
+
+There were three main steps. Opening the document to get a file object, reading the file object and closing the file object. 
+
+Now, lets create a file.
+```
+# open a file to write in, the "w" is for write
+file = open("newfile.txt", "w")
+
+# writing a line to the file
+file.write("hello \n")
+
+# writing another line to the file
+file.write("Here is another line\n")
+
+# closing file
+file.close()
+
+```
+There, we opened the file, wrote to the file and then closed it.
+
+For reference, the 'w' was for write, but there are other commands that are useful for files.
+'r' when the file will only be read
+'w' for only writing 
+'wb' write binary
+'a' opens the file for appending; any data written to the file is automatically added to the end. 
+'r+' opens the file for both reading and writing.
+
+###CSV
+The `.csv` files are basically spreadsheets. You can make a csv by using excel or other spreadsheet program and saving the file as csv. (Be careful because some of the extra features you are used to like, highlighting and links, will not be saved.)
+
+`csv` stands for comma separated values. These files are great because of their simplicity. 
+
+Here is a simple representation of a spreadsheet:
+
+|  person | city  | state  | 
+|---|---|---|
+| John  | Denver  | CO  | 
+| Katie  | Chicago | IL  | 
+| Kevin  |  Washington |  DC |  
+
+If we save that file as a csv and open it in a text editor like sublime we will see that it looks like a list separated by commas.
+```
+person,city,state
+John,Denver,CO
+Katie,Chicago,IL
+Kevin,Washington,DC
+```
+Each item gets a comma and each line is on a separate line.
+
+We can use the [csv module](https://docs.python.org/2/library/csv.html) to easily read and write csv files. 
+
+Now, lets see how to read a file. We will read the file and loop through the file. 
+
+```
+# import csv functionality 
+import csv
+
+# opening in a way that will close the file when we are done
+with open('people.csv', 'rb') as csvfile:
+	# reading file
+    reader = csv.reader(csvfile)
+    # looping through the lines in the csv
+    for row in reader:
+		print(row)
+		print("now print the first three cells")
+		print(row[0])
+		print(row[1])
+		print(row[2])
+
+```
+
+Let's look at an example of writing a csv
+
+```
+# import to use csv capabilities in your program
+import csv
+
+# opening files in this way is good because it will make sure the file closes itself.
+with open('eggs.csv', 'wb') as csvfile:
+	# creates the csv file
+    writer = csv.writer(csvfile)
+    # writes to the file
+    writer.writerow(['a1', 'b1', 'c1'])
+    writer.writerow(['a2', 'b2', 'c2'])
+    writer.writerow(['a3', 'b3', 'c3'])
+# automatically closes
+```
+That program will create a spreadsheet that looks something like this. 
+
+|a1|b1|c1|
+|---|---|---|
+|a2|b2|c2|
+|a3|b3|c3|
+
+Lets use or csv writing skills to make a program that takes a csv and makes it into a html table.
+
+Here is what a html table looks like:
+```
+<table>
+<thead>
+	<th>First name</th>
+	<th>Last name</th>
+	<th>Age</th>
+</thead>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td> 
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td> 
+  <td>94</td>
+</tr>
+</table>
+
+```
+HTML tags are always symmetrical. Each opening tag has a closing tag, the whole table is defined by the `<table>` tags. The table heading is defined by the `<thead>` tags. `<th>` is for each item in the heading. `<tr>` is for each row and `<td>` is for each item in the row. 
 
 ***
 #Additional resources
