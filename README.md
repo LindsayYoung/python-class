@@ -8,7 +8,7 @@ Sunlight's 2014 Summer Python class
 * [Second class](#second-class):  data types, data structures, conditional, user input, command line
 * [Third class](#third-class): command line, loops, range
 * [Fourth class](#fourth-class): functions
-* Fifth class: CSV reading and writing
+* [Fifth class](#fifth-class): files, CSV reading and writing
 * Sixth class: APIs
 * Start projects!
 
