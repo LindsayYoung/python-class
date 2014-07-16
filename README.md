@@ -586,7 +586,7 @@ Here is what a html table looks like:
 ```
 HTML tags are always symmetrical. Each opening tag has a closing tag, the whole table is defined by the `<table>` tags. The table heading is defined by the `<thead>` tags. `<th>` is for each item in the heading. `<tr>` is for each row and `<td>` is for each item in the row. 
 
-We can use the Baseball2013.csv and make it into a table.
+We can use the [Baseball2013.csv](http://assets.sunlightfoundation.com.s3.amazonaws.com/reporting/uploads/Baseball%202013.csv) and make it into a table.
 * save the file in your code follder and save your code in the same folder.
 * read the baseball spreadsheet
 * loop thorugh the lines of the csv and add tags
