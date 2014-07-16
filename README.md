@@ -469,7 +469,6 @@ file = open("newfile.txt", "w")
 
 # writing a line to the file
 file.write("hello \n")
-
 # writing another line to the file
 file.write("Here is another line\n")
 
@@ -479,10 +478,19 @@ file.close()
 ```
 There, we opened the file, wrote to the file and then closed it.
 
-For reference, the 'w' was for write, but there are other commands that are useful for files.
-'r' when the file will only be read
-'w' for only writing 
-'wb' write binary
+Let's try to open this file another way. This way will make sure the file closes, so it is more secure.
+```
+# creating a file object
+with open("newfile2.txt", "w") as new_file:
+	# writing a line to the file
+	file.write("hello \n")
+	# writing another line to the file
+	file.write("Here is another line in another file.\n")
+# file closes when the loop ends
+```
+
+For reference, the 'w' was for write, but there are other commands that are useful for files. 
+'r' when the file will only be read. 'w' for only writing.'wb' write binary, 'rb' is write binary.
 'a' opens the file for appending; any data written to the file is automatically added to the end. 
 'r+' opens the file for both reading and writing.
 
@@ -577,6 +585,13 @@ Here is what a html table looks like:
 
 ```
 HTML tags are always symmetrical. Each opening tag has a closing tag, the whole table is defined by the `<table>` tags. The table heading is defined by the `<thead>` tags. `<th>` is for each item in the heading. `<tr>` is for each row and `<td>` is for each item in the row. 
+
+We can use the Baseball2013.csv and make it into a table.
+* save the file in your code follder and save your code in the same folder.
+* read the baseball spreadsheet
+* loop thorugh the lines of the csv and add tags
+* write the text with html to a file 
+
 
 ***
 #Additional resources
