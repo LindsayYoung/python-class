@@ -9,11 +9,11 @@ Sunlight's 2014 Summer Python class
 * [Third class](#third-class): command line, loops, range
 * [Fourth class](#fourth-class): functions
 * [Fifth class](#fifth-class): files, CSV reading and writing
-* Sixth class: APIs
+* [Sixth class](#sixth-class): classes and objects
+* Seventh class: APIs
 * Start projects!
 
 [Additional resources](#additional-resources)
-
 
 ***
 # First Class!
@@ -56,9 +56,7 @@ types and changing types -
 
 print a super PAC name using string indices. Here is your list:
 
-```
-pac_list = [ "Action", "Against",  "Americans", "Awesome", "Citizens", "Committee", "Communist", "Country", "For", "Freedom", "Liberty", "PAC", "Patriots", "People", "Progressive", "Restore", "Results", "Sunlight", "Super", "Taxpayers", "United", "Values", "Votes", "Zealots", "Zombies"]
-```
+	pac_list = [ "Action", "Against",  "Americans", "Awesome", "Citizens", "Committee", "Communist", "Country", "For", "Freedom", "Liberty", "PAC", "Patriots", "People", "Progressive", "Restore", "Results", "Sunlight", "Super", "Taxpayers", "United", "Values", "Votes", "Zealots", "Zombies"]
 
 Extra credit: find the random integer function to create a new name each time you run the program. (Hint: google “python random integer”)
 
@@ -508,52 +506,48 @@ Here is a simple representation of a spreadsheet:
 | Kevin  |  Washington |  DC |  
 
 If we save that file as a csv and open it in a text editor like sublime we will see that it looks like a list separated by commas.
-```
-person,city,state
-John,Denver,CO
-Katie,Chicago,IL
-Kevin,Washington,DC
-```
+
+	person,city,state
+	John,Denver,CO
+	Katie,Chicago,IL
+	Kevin,Washington,DC
+
 Each item gets a comma and each line is on a separate line.
 
 We can use the [csv module](https://docs.python.org/2/library/csv.html) to easily read and write csv files. 
 
 Now, lets see how to read a file. We will read the file and loop through the file. 
 
-```
-# import csv functionality 
-import csv
+	# import csv functionality 
+	import csv
 
-# opening in a way that will close the file when we are done
-with open('people.csv', 'rb') as csvfile:
-	# reading file
-    reader = csv.reader(csvfile)
-    # looping through the lines in the csv
-    for row in reader:
-		print(row)
-		print("now print the first three cells")
-		print(row[0])
-		print(row[1])
-		print(row[2])
+	# opening in a way that will close the file when we are done
+	with open('people.csv', 'rb') as csvfile:
+		# reading file
+	    reader = csv.reader(csvfile)
+	    # looping through the lines in the csv
+	    for row in reader:
+			print(row)
+			print("now print the first three cells")
+			print(row[0])
+			print(row[1])
+			print(row[2])
 
-```
+Let's look at an example of writing a csv	
 
-Let's look at an example of writing a csv
+	# import to use csv capabilities in your program
+	import csv
 
-```
-# import to use csv capabilities in your program
-import csv
+	# opening files in this way is good because it will make sure the file closes itself.
+	with open('eggs.csv', 'wb') as csvfile:
+		# creates the csv file
+	    writer = csv.writer(csvfile)
+	    # writes to the file
+	    writer.writerow(['a1', 'b1', 'c1'])
+	    writer.writerow(['a2', 'b2', 'c2'])
+	    writer.writerow(['a3', 'b3', 'c3'])
+	# automatically closes
 
-# opening files in this way is good because it will make sure the file closes itself.
-with open('eggs.csv', 'wb') as csvfile:
-	# creates the csv file
-    writer = csv.writer(csvfile)
-    # writes to the file
-    writer.writerow(['a1', 'b1', 'c1'])
-    writer.writerow(['a2', 'b2', 'c2'])
-    writer.writerow(['a3', 'b3', 'c3'])
-# automatically closes
-```
 That program will create a spreadsheet that looks something like this. 
 
 |a1|b1|c1|
@@ -564,26 +558,25 @@ That program will create a spreadsheet that looks something like this.
 Lets use or csv writing skills to make a program that takes a csv and makes it into a html table.
 
 Here is what a html table looks like:
-```
-<table>
-<thead>
-	<th>First name</th>
-	<th>Last name</th>
-	<th>Age</th>
-</thead>
-<tr>
-  <td>Jill</td>
-  <td>Smith</td> 
-  <td>50</td>
-</tr>
-<tr>
-  <td>Eve</td>
-  <td>Jackson</td> 
-  <td>94</td>
-</tr>
-</table>
 
-```
+	<table>
+	<thead>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>Age</th>
+	</thead>
+	<tr>
+	  <td>Jill</td>
+	  <td>Smith</td> 
+	  <td>50</td>
+	</tr>
+	<tr>
+	  <td>Eve</td>
+	  <td>Jackson</td> 
+	  <td>94</td>
+	</tr>
+	</table>
+
 HTML tags are always symmetrical. Each opening tag has a closing tag, the whole table is defined by the `<table>` tags. The table heading is defined by the `<thead>` tags. `<th>` is for each item in the heading. `<tr>` is for each row and `<td>` is for each item in the row. 
 
 We can use the [Baseball2013.csv](http://assets.sunlightfoundation.com.s3.amazonaws.com/reporting/uploads/Baseball%202013.csv) and make it into a table.
@@ -592,6 +585,12 @@ We can use the [Baseball2013.csv](http://assets.sunlightfoundation.com.s3.amazon
 * loop thorugh the lines of the csv and add tags
 * write the text with html to a file 
 
+***
+# Sixth Class!
+
+Classes, objects, and more!
+
+See *lesson-6/slides.pdf* for class slides and *lesson-6/restaurant.py* for in-class exercises.
 
 ***
 #Additional resources
