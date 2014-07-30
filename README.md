@@ -10,7 +10,7 @@ Sunlight's 2014 Summer Python class
 * [Fourth class](#fourth-class): functions
 * [Fifth class](#fifth-class): files, CSV reading and writing
 * [Sixth class](#sixth-class): classes and objects
-* Seventh class: APIs
+* [Seventh class](#seventh-class)Seventh class: APIs
 * Start projects!
 
 [Additional resources](#additional-resources)
@@ -587,10 +587,28 @@ We can use the [Baseball2013.csv](http://assets.sunlightfoundation.com.s3.amazon
 
 ***
 # Sixth Class!
+07/23/2014
 
 Classes, objects, and more!
 
 See *lesson-6/slides.pdf* for class slides and *lesson-6/restaurant.py* for in-class exercises.
+
+***
+# Seventh Class!
+07/30/2014
+
+API!
+
+APIs are ways that you can ask a question to a computer and get an answer.
+
+Before we get started, you will need an API key to access Sunlight APIs.
+go ahead and get one [here](http://sunlightfoundation.com/api/accounts/register/).
+
+Now we are going to walk through using the query builder [here](http://tryit.sunlightfoundation.com/congress).
+
+Let's look at makeing this process easier by using [requests](http://docs.python-requests.org/en/latest/). 
+
+See all the Sunlight API's [here](http://sunlightfoundation.com/api/)
 
 ***
 #Additional resources
