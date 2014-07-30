@@ -610,7 +610,7 @@ Let's look at makeing this process easier by using [requests](http://docs.python
 
 See all the Sunlight API's [here](http://sunlightfoundation.com/api/)
 
-[Here]() is the code we wrote in class that asks a user for a zipcode and returns the name of the congress persons that represent that district.
+[Here](https://github.com/LindsayYoung/python-class/blob/master/lesson-7/find_member.py) is the code we wrote in class that asks a user for a zipcode and returns the name of the congress persons that represent that district.
 
 ***
 #Additional resources
