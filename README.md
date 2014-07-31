@@ -630,7 +630,6 @@ Your call will look like this but you need to put in your API key:
 ```
 congress.api.sunlightfoundation.com/legislators/locate?zip=92886&apikey=your_api_key_here
 ```
-
 You should see that the results you get in your browser look like the response body we get in the response of the query builder.
 
 To make API calls, we need to create vary particular strings to ask a question of the data in the API. The query builder is a good way to understand how that call is supposed to look.
@@ -648,8 +647,7 @@ You will get the same results if you open up your bash terminal and use `curl`. 
 $ curl "congress.api.sunlightfoundation.com/legislators/locate?zip=92886&apikey=your_api_key_here"
 ```
 
-Very cool!
-
+Did you see what that prints out? It is very cool!
 
 Now we have an idea of how APIs work, we can use python to automate this process. 
 
