@@ -620,6 +620,8 @@ Clicking on `try it` gave us a few things.
 * response headers- is other information with the request.
 * response body- this is what you will see in your browser, it is the information you wanted in a format called json. We can use json as lists and dictionaries we have seen before.
 
+That will give us a lot of information about the legislators, but we can just ignore the information we don't want to use.
+
 Let's use the call to look at this information in a browser. 
 
 To make it easy to read, lets find a browser plugin that will put our requests into a more human-readable format. I recommend [jsonView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) for crome browsers. You can google "json format browser plugin" and the name of your browser to find a useful plugin.
