@@ -635,10 +635,10 @@ You should see that the results you get in your browser look like the response b
 To make API calls, we need to create vary particular strings to ask a question of the data in the API. The query builder is a good way to understand how that call is supposed to look.
 
 We can see in our example call, that we had
-1. the url to the api
-2. the method we wanted
-3. a question mark separating the url and method from our parameters
-4. parameters, these are like the key value pairs we use in dictionaries but in this case it uses `=` to denote the key value pair and `&` in between the parameters. We passed in two parameters, the zip and apikey. An api key will gives access to all Sunlight's apis.
+* the url to the api `congress.api.sunlightfoundation.com/`
+* the method we wanted, `legislators/locate`
+* a question mark separating the url and method from our parameters, `?`
+* parameters, `zip=92886&apikey=your_api_key_here` These are like the key value pairs we use in dictionaries but in this case it uses `=` to denote the key value pair and `&` in between the parameters. We passed in two parameters, the zip and apikey. An api key will gives access to all Sunlight's apis.
 
 We can even check out this call in the command line.
 You will get the same results if you open up your bash terminal and use `curl`. It is pronounced curl but I like to think of it as 'c', as in see url. It will show us the url. (Don't forget to substitute your API key. Don't type the '$' that signifies the beginning of a line in the terminal.)
