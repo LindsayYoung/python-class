@@ -624,7 +624,7 @@ That will give us a lot of information about the legislators, but we can just ig
 
 Let's use the call to look at this information in a browser. 
 
-To make it easy to read, lets find a browser plugin that will put our requests into a more human-readable format. I recommend [jsonView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) for crome browsers. You can google "json format browser plugin" and the name of your browser to find a useful plugin.
+To make it easy to read, lets find a browser plug-in that will put our requests into a more human-readable format. I recommend [jsonView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) for crome browsers. You can google "json format browser plugin" and the name of your browser to find a useful plug-in.
 
 Ok, I will now put the call into the browser. 
 
