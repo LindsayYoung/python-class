@@ -561,9 +561,11 @@ Here is what a html table looks like:
 
 	<table>
 	<thead>
+	<tr>
 		<th>First name</th>
 		<th>Last name</th>
 		<th>Age</th>
+	</tr>
 	</thead>
 	<tr>
 	  <td>Jill</td>
@@ -580,9 +582,9 @@ Here is what a html table looks like:
 HTML tags are always symmetrical. Each opening tag has a closing tag, the whole table is defined by the `<table>` tags. The table heading is defined by the `<thead>` tags. `<th>` is for each item in the heading. `<tr>` is for each row and `<td>` is for each item in the row. 
 
 We can use the [Baseball2013.csv](http://assets.sunlightfoundation.com.s3.amazonaws.com/reporting/uploads/Baseball%202013.csv) and make it into a table.
-* save the file in your code follder and save your code in the same folder.
+* save the file in your code folder and save your code in the same folder.
 * read the baseball spreadsheet
-* loop thorugh the lines of the csv and add tags
+* loop through the lines of the csv and add tags
 * write the text with html to a file 
 
 ***
@@ -601,16 +603,70 @@ API!
 
 APIs are ways that you can ask a question to a computer and get an answer.
 
-Before we get started, you will need an API key to access Sunlight APIs.
-go ahead and get one [here](http://sunlightfoundation.com/api/accounts/register/).
+Before we get started, you will need an API key to access Sunlight APIs. Go ahead and get one [here](http://sunlightfoundation.com/api/accounts/register/). It is free and straight forward.
 
 Now we are going to walk through using the query builder [here](http://tryit.sunlightfoundation.com/congress).
 
-Let's look at makeing this process easier by using [requests](http://docs.python-requests.org/en/latest/). 
+To use the query builder:
+* put your API key at the top
+* click on the method you want; You can think of methods as different kinds of information.
+* fill in the query builder to create the call you want.
 
-See all the Sunlight API's [here](http://sunlightfoundation.com/api/)
+In our example, we used the legislators/locate method. I then used 92886 as a example zip code in the zip box.
 
-[Here](https://github.com/LindsayYoung/python-class/blob/master/lesson-7/find_member.py) is the code we wrote in class that asks a user for a zipcode and returns the name of the congress persons that represent that district.
+Clicking on `try it` gave us a few things. 
+* call- this is the url that we need to ask the api the question, "What legislators represent zip code 92886?"
+* response code- this is a way of seeing that it worked. It should be 200. You may have seen other response codes before, 404 means the server could not find your request and 500s mean a server error. See a list of response codes [here](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+* response headers- is other information with the request.
+* response body- this is what you will see in your browser, it is the information you wanted in a format called json. We can use json as lists and dictionaries we have seen before.
+
+Let's use the call to look at this information in a browser. 
+
+To make it easy to read, lets find a browser plugin that will put our requests into a more human-readable format. I recommend (jsonView)[https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en] for crome browsers. You can google "json format browser plugin" and the name of your browser to find a useful plugin.
+
+Ok, I will now put the call into the browser. 
+
+Your call will look like this but you need to put in your API key:
+```
+congress.api.sunlightfoundation.com/legislators/locate?zip=92886&apikey=your_api_key_here
+```
+
+You should see that the results you get in your browser look like the response body we get in the response of the query builder.
+
+To make API calls, we need to create vary particular strings to ask a question of the data in the API. The query builder is a good way to understand how that call is supposed to look.
+
+We can see in our example call, that we had
+1) the url to the api
+2) the method we wanted
+3) a question mark separating the url and method from our parameters
+4) parameters, these are like the key value pairs we use in dictionaries but in this case it uses `=` to denote the key value pair and `&` in between the parameters. We passed in two parameters, the zip and apikey. An api key will gives access to all Sunlight's apis.
+
+We can even check out this call in the command line.
+You will get the same results if you open up your bash terminal and use `curl`. It is pronounced curl but I like to think of it as 'c', as in see, url. It will show us the url. (Don't forget to substitute your API key. Don't type the '$' that signifies the beginning of a line in the terminal.)
+
+```
+$ curl "congress.api.sunlightfoundation.com/legislators/locate?zip=92886&apikey=your_api_key_here"
+```
+
+Very cool!
+
+
+Now we have an idea of how APIs work, we can use python to automate this process. 
+
+Let's look at making this process easier by using [requests](http://docs.python-requests.org/en/latest/). Requests is a library- a library is collection of code you can use. The requests library will format and retrieve the information we want for us.
+
+We will need to download and install requests to use it. You can download in your bash terminal by using:
+ * `pip install requests`, if you have pip.  
+ * You can also use `easy_install requests`. 
+ * You can also `easy_install pip` and then, `pip install requests'
+
+ *if you are on a mac and are having trouble with permissions, try 'sudo pip install requests' or 'sudo easy_install requests'. It will then ask you for the password you use to log into your computer. You won't see characters, but it will take your password.
+
+ Pip is an easy way to install things. When you have to install things yourself, and don't just have a button to download like you are used to, installing things is not so fun.
+
+[Here](https://github.com/LindsayYoung/python-class/blob/master/lesson-7/find_member_commented.py) is the code we wrote in class that asks a user for a zip code and returns the name of the congress persons that represent that district.
+
+Also, See all the Sunlight API's [here](http://sunlightfoundation.com/api/)
 
 ***
 #Additional resources
