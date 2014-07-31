@@ -6,6 +6,7 @@ import requests
 
 apikey = # get your own at http://sunlightfoundation.com/api/accounts/register/
 
+# Here is an example of the last part of the url we are trying to build.
 # /legislators/locate?zip=11216
 
 endpoint = 'https://congress.api.sunlightfoundation.com/legislators/locate'
