@@ -10,8 +10,8 @@ Sunlight's 2014 Summer Python class
 * [Fourth class](#fourth-class): functions
 * [Fifth class](#fifth-class): files, CSV reading and writing
 * [Sixth class](#sixth-class): classes and objects
-* [Seventh class](#seventh-class)Seventh class: APIs
-* Start projects!
+* [Seventh class](#seventh-class): APIs
+* [Eighth class](#eighth-class):CSV and API review and Start projects!
 
 [Additional resources](#additional-resources)
 
@@ -22,12 +22,13 @@ Sunlight's 2014 Summer Python class
 
 * Intro
 
-* What is Python?
+What is Python?
 * A Python program (or any program) is a list of instructions for you computer
 * Python is an intermediate language that makes these instructions somewhat more readable for humans
 * Like any language, Python has syntax and grammatical rules that you need to follow to facilitate understanding between yourself and the computer
 * Breaking these rules causes syntax errors that break your program
 
+Python is a free, open source language. For the beginning of the class we are going to use PythonAnywhere to run our code in our browser. 
 * [PythonAnywhere](https://www.pythonanywhere.com)
 1. run a line of code directly in the IPython console (we are using 2.7)
 2. make a file and click save and run
@@ -41,24 +42,143 @@ Sunlight's 2014 Summer Python class
 * “Hello World!”
 * The Bash prompt
 
-###Variables and assignment
-types and changing types - 
-* `int()` 
-* `str()`
-* `float()`
+(If you missed this class, you can do the PythonAnywhere tutorial on the website.)  
 
-###first data structures
-* list
-* dictionary
+###Objects
+
+In Python, we work with objects. Thiat means we create, store and change objects in our programs. Useful objects are things like numbers and words. As we continue, we will make much more complex objects, but lets start with the basics. (See the [python documantation](https://docs.python.org/2/library/types.html) if you want to sneek a peek.)
+
+We can also create variables in python. You can think of creating variables as naming objects so you can remember them later and when you call them, they will be ready for you. Variable names can't start with numbers and they can't have spaces. 
+
+Let's see a simple example of assigning a variable in the python console:
+```
+>>> greeting = "Hello"
+>>> print(greeting)
+Hello
+```
+
+In that code, we assigned the value, "Hello" to the variable name greeting. When you make variables, the name always goes to the left and the value that is being represented always goes to the right. We then used the print function to show us the value of greeting.
+
+We can create many objects for our programs that you can think of as numbers and words, but computers need a lot more specificity. So, in this case, we are talking about three types of objects in python. 
+
+###Types
+* integer- think of this as a whole number; no decimals. You can do math with this type of object but if you need the precision of decimals, say if you are doing division, don't use this because the computer will keep rounding the numbers to make them whole.
+* float- think of this as a decimal number. these are good for doing math.
+* string- think of strings as a collection of characters. These can be letters, numbers or symbols. If you have numbers as a string type, you can't do math with them. When you create a string, use single or double quotes. That was why "Hello" was quoted in the first example.
+
+Here are the functions we are going to use for types and changing types, We will use these functions by putting objects into the parenthesizes- 
+* `type()` this will tell us the type of an object
+* `int()` this will make a number an integer
+* `str()` this will make an object into a string 
+* `float()` this will make a number into a float
+
+Now, in the python shell, we will use some functions to find out what type an object is and change an object's type. If you want to save that change, you will need to reassign the variable, that tells the computer that the name you chose for your variable is representing another object, in this case a different type of object. 
+
+```
+>>> type("Hello world!")
+<type 'str'>
+>>> type(4)
+<type 'int'>
+>>> type(3.5)
+<type 'float'>
+>>> number = 7
+>>> type(number)
+<type 'int'>
+>>> float(number)
+7.0
+>>> type(number)
+<type 'int'>
+>>> int(number)
+7
+>>> str(number)
+'7'
+>>> int(number)
+7
+>>> number = str(number)
+>>> type(number)
+<type 'str'>
+>>> 
+
+```
+
+##data structures
+Lists and dictions are to ways to store your objects in a python program. You can think about lists as organized by the order of the objects and dictionaries as organized by the name of the object.
+
+###Lists
+
+Here are some things to know about lists:
+* lists are ordered
+* use brackets [ ]
+* use commas between objects
+* add to the list with `.append()`
+* remove to a list with `.remove()`
+* order a list `.sort()`
+* you can grab an object in a list by knowing its location
+
+Let's look at a list example. For grabbing an item on the list we will need to know it's location in the list. One important thing to know is that computers don't count like people, they start counting at zero. So if you ask a computer to count something, it will go, 0, 1, 2, 3...
+To get an item in the list,
+
+I will add comments using `#`. In python, anything after the hash mark will not be interpreted as code. It is to tell other humans what is going on. (Also, if you follow along, don't type the dots.)
+
+```
+>>> # I will make a variable that is a list
+... pets = ['cat', 'dog', 'bird', 'bunny', 'turtle', 'fish']
+>>> # I will print the list
+... print(pets)
+['cat', 'dog', 'bird', 'bunny', 'turtle', 'fish']
+>>> # print the third item in the list
+... pets[2]
+'bird'
+>>> # I will add to the list
+... pets.append('tiger')
+>>> print(pets)
+['cat', 'dog', 'bird', 'bunny', 'turtle', 'fish', 'tiger']
+>>> # A tiger is not a pet, I will remove it
+>>> pets.remove('tiger')
+>>> print pets
+['cat', 'dog', 'bird', 'bunny', 'turtle', 'fish']
+``` 
+
+###Dictionaries
+
+In the dictionaries you are used to, the information is organized by the word. Each word is paired with a definition. In Python dictionaries, you find each value by looking up its key.
+
+Here are some things to know about dictionaries:
+* key value pairs
+* use curly braces { } (we decided curly braces look like open dictionary books)
+* lookup by key
+* the key must be unique
+* use a colon between a key and a value, (the key always comes first)
+* use commas between key value pairs
+
+Let's look at an example of using a dictionary:
+```
+>>> # creating a dictionary where names are keys and the value is a number
+... people = {'Mark': 14, 'Jose': 7, 'Pam':16, 'Jae':10}
+>>> # find the value associated with a key
+... people['Pam']
+16
+>>> # lets add to a dictionary
+... people['Amy'] = 11
+>>> print(people)
+{'Amy': 11, 'Jose': 7, 'Jae': 10, 'Pam': 16, 'Mark': 14}
+>>> #lets remove Mark
+>>> del people['Mark']
+>>> print(people)
+{'Amy': 11, 'Jose': 7, 'Jae': 10, 'Pam': 16}
+>>> 
+```
 
 ###Homework-
 [Homework inspired by Nicko](http://sunlightfoundation.com/blog/2010/12/02/sunlights-political-action-committee-pac-name-generator/)
 
-print a super PAC name using string indices. Here is your list:
+print a super PAC name using list indexes. Here is your list:
 
 	pac_list = [ "Action", "Against",  "Americans", "Awesome", "Citizens", "Committee", "Communist", "Country", "For", "Freedom", "Liberty", "PAC", "Patriots", "People", "Progressive", "Restore", "Results", "Sunlight", "Super", "Taxpayers", "United", "Values", "Votes", "Zealots", "Zombies"]
 
 Extra credit: find the random integer function to create a new name each time you run the program. (Hint: google “python random integer”)
+
+See [class code](https://github.com/LindsayYoung/python-class/blob/master/lesson-1/first_class.py)
 
 ***
 # Second Class!
@@ -110,6 +230,7 @@ example:
 * lookup by key
 * the key must be unique
 * delete form a dictionary with del
+
 example:
 ```
 >>> my_dictionary = {'DE':'Delaware', 'PA':'Pennsylvania'}
@@ -667,6 +788,27 @@ We will need to download and install requests to use it. You can download in you
 [Here](https://github.com/LindsayYoung/python-class/blob/master/lesson-7/find_member_commented.py) is the code we wrote in class that asks a user for a zip code and returns the name of the congress persons that represent that district.
 
 Also, See all the Sunlight API's [here](http://sunlightfoundation.com/api/)
+
+***
+# Eighth Class!
+08/06/2014
+
+###API to csv
+
+The first part of class will be some additional API and csv practice and then we will talk about project groups.
+
+This first part of class is inspired by a press call I got recently. Once you know how to use APIs, it is often the easiest way to get the data you want. Then you want to share you data in an accessible way. 
+
+Let's do some practice using the Capitol Words API to create spreadsheets filled with data.
+
+Then, we can alter the script to ask for user input so it will work for any API call with that method. 
+
+[Here](https://github.com/LindsayYoung/python-class/blob/master/lesson-8/capitol_words.py) is the sample code. 
+
+###Projects!
+
+Let's have a discussion of how we are going to divide ourselves into project groups and what we are going to work on. 
+
 
 ***
 #Additional resources
