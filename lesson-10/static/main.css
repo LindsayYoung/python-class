@@ -1,0 +1,14 @@
+h1 {
+    font-size: 72px;
+}
+
+.center-text
+{
+  text-align:center;
+}
+
+#content {
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+}

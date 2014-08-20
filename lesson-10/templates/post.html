@@ -1,0 +1,17 @@
+{% extends 'root.html' %}
+
+{% block content %}
+    {% if name %}
+        <div class="center-text">Your full name is: {{ name }}</div>
+    {% else %}
+        {% include 'forms/name_form.html' %}
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+    <h1 class="center-text">POST PAGE HEADER</h1>
+{% endblock %}
+
+{% block footer %}
+    <h1 class="center-text">POST PAGE FOOTER</h1>
+{% endblock %}

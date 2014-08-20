@@ -1,0 +1,17 @@
+{% extends 'root.html' %}
+
+{% block header %}
+    <h1 class="center-text">INDEX PAGE HEADER</h1>
+{% endblock %}
+
+{% block content %}
+    {% for i in data %}
+        {% with dict=i %}
+            {% include 'snippets/snippet.html' %}
+        {% endwith %}
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+    <h1 class="center-text">INDEX PAGE FOOTER</h1>
+{% endblock %}
