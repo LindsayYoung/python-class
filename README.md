@@ -818,6 +818,8 @@ Let's have a discussion of how we are going to divide ourselves into project gro
 
 This class will introduce the web microframework called Flask. We will cover instantiating the Flask class, python decorators, routes, templates, GET and POST requests, and how to structure your project directory. The class will more or less follow the Flask quickstart guide in the official documentation [http://flask.pocoo.org/docs/quickstart/](http://flask.pocoo.org/docs/quickstart/) leaving out the database hookup for next week.
 
+The only package you'll need to install is flask: `pip install flask`
+
 Python decorators are basically shorthand for both defining and passing a method as an argument into another method. For example:
 
 	@app.route('/')
