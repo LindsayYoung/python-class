@@ -12,6 +12,7 @@ Sunlight's 2014 Summer Python class
 * [Sixth class](#sixth-class): classes and objects
 * [Seventh class](#seventh-class): APIs
 * [Eighth class](#eighth-class):CSV and API review and Start projects!
+* [Tenth class](#tenth-class):CSV and API review and Start projects!
 
 [Additional resources](#additional-resources)
 
@@ -809,6 +810,29 @@ Then, we can alter the script to ask for user input so it will work for any API 
 
 Let's have a discussion of how we are going to divide ourselves into project groups and what we are going to work on. 
 
+***
+# Tenth Class!
+08/20/2014
+
+###Flask
+
+This class will introduce the web microframework called Flask. We will cover instantiating the Flask class, python decorators, routes, templates, GET and POST requests, and how to structure your project directory. The class will more or less follow the Flask quickstart guide in the official documentation [http://flask.pocoo.org/docs/quickstart/](http://flask.pocoo.org/docs/quickstart/) leaving out the database hookup for next week.
+
+Python decorators are basically shorthand for both defining and passing a method as an argument into another method. For example:
+
+	@app.route('/')
+	def index():
+		return "it's alive!"
+
+Is essentially
+
+	def index():
+		return "it's alive!"
+		
+	@app.route('/')(index)
+	
+
+Flask uses a templating language called Jinja2 which is inspired from Django's templating language. You can read more about the syntax for this language at the official site [http://jinja.pocoo.org/](http://jinja.pocoo.org/).
 
 ***
 #Additional resources
