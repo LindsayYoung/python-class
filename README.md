@@ -12,7 +12,7 @@ Sunlight's 2014 Summer Python class
 * [Sixth class](#sixth-class): classes and objects
 * [Seventh class](#seventh-class): APIs
 * [Eighth class](#eighth-class):CSV and API review and Start projects!
-* [Tenth class](#tenth-class):CSV and API review and Start projects!
+* [Tenth class](#tenth-class):Flask
 
 [Additional resources](#additional-resources)
 
