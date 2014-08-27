@@ -820,20 +820,6 @@ This class will introduce the web microframework called Flask. We will cover ins
 
 The only package you'll need to install is flask: `pip install flask`
 
-Python decorators are basically shorthand for both defining and passing a method as an argument into another method. For example:
-
-	@app.route('/')
-	def index():
-		return "it's alive!"
-
-Is essentially
-
-	def index():
-		return "it's alive!"
-		
-	@app.route('/')(index)
-	
-
 Flask uses a templating language called Jinja2 which is inspired from Django's templating language. You can read more about the syntax for this language at the official site [http://jinja.pocoo.org/](http://jinja.pocoo.org/).
 
 ***
